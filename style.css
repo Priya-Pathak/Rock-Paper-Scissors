@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #363b74;
+}
+
+header {
+    background: white;
+    padding: 20px;
+}
+
+header h1{
+    color: #363b74;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
+img{
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.score-board {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
+    border: 3px  solid white ;
+    text-align: center;
+    border-radius: 4px;;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    font-family: 'Asap', sans-serif;
+    position: relative;
+}
+.badge{
+    background: #ef4f91;
+    color: white;
+    font-size: 14px;
+    padding: 2px 14px;
+    font-family: 'Asap', sans-serif;
+}
+
+#user-label{
+    position: absolute;
+    top: 35%;
+    left: -20%;
+}
+
+#computer-label{
+    position: absolute;
+    top: 35%;
+    right: -20%;
+}
+p {
+    font-size: 30px;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+.choices{
+    text-align: center;
+}
+.choice{
+    display: inline-block;
+    margin: 40px 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: all 100s ease;
+
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #ef4f91;
+}

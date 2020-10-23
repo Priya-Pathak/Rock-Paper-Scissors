@@ -44,14 +44,15 @@ function lose(userChoice, computerChoice){
     compScore_span.innerHTML = compScore;
     const userSmall = "user".fontsize(5).sup();
     const compSmall = "comp".fontsize(5).sup();
-    confetti.stop();
+    confetti.remove();
     result_p.innerHTML =   `${convertWord(userChoice)}${userSmall} covers ${convertWord(computerChoice)}${compSmall}  !!  You lost!!`;
 }
 
 function draw(userChoice, computerChoice){
     const userSmall = "user".fontsize(5).sup();
     const compSmall = "comp".fontsize(5).sup();
-    confetti.pause();
+    confetti.remove();
+    confetti.start(300);
     result_p.innerHTML = `${convertWord(userChoice)}${userSmall} versus ${convertWord(computerChoice)} ${compSmall}  !!  It is a draw!!`;
 }
 

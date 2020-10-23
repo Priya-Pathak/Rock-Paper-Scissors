@@ -36,7 +36,7 @@ function win(userChoice, computerChoice){
     const userSmall = "user".fontsize(5).sup();
     const compSmall = "comp".fontsize(5).sup();
     result_p.innerHTML = `${convertWord(userChoice)}${userSmall} beats ${convertWord(computerChoice)}${compSmall}  !!  You win!!`;
-
+    confetti.start();
 }
 
 function lose(userChoice, computerChoice){
@@ -44,12 +44,14 @@ function lose(userChoice, computerChoice){
     compScore_span.innerHTML = compScore;
     const userSmall = "user".fontsize(5).sup();
     const compSmall = "comp".fontsize(5).sup();
-    result_p.innerHTML =   `${convertWord(userChoice)}${userSmall} covers ${convertWord(computerChoice)}${compSmall}  !!  You lose!!`;
+    confetti.stop();
+    result_p.innerHTML =   `${convertWord(userChoice)}${userSmall} covers ${convertWord(computerChoice)}${compSmall}  !!  You lost!!`;
 }
 
 function draw(userChoice, computerChoice){
     const userSmall = "user".fontsize(5).sup();
     const compSmall = "comp".fontsize(5).sup();
+    confetti.pause();
     result_p.innerHTML = `${convertWord(userChoice)}${userSmall} versus ${convertWord(computerChoice)} ${compSmall}  !!  It is a draw!!`;
 }
 
